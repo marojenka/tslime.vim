@@ -2,6 +2,8 @@
 
 My link in a chain of forks. 
 I took code from [sjl](https://github.com/sjl/tslime.vim).
+I zink you better to use [this](https://github.com/jgdavey/tslime.vim.git).
+
 Code may be  ugly but simple. The following is mostly a reminder for myself.
 
 I just wanted a simple way to create new pane and send text into it.  This
