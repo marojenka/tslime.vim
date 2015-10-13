@@ -76,9 +76,14 @@ function! TmuxActivePane()
 endfunction
 
 function s:Tmux_Create_Pane() 
+" function s:Tmux_Get_Pane_ID() 
     " I don't want to bother with checking if we are 
     " in tmux
-    let log = system("tmux split-window ")
+    if system("tmux list-panes | wc -l") =~ "1"
+        let log = system("tmux split-window")
+    else 
+        let log = system("tmux lastp")
+    endif
     let b:created_pane = TmuxActivePane()
 endfunction
 

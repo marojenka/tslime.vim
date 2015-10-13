@@ -6,11 +6,9 @@ I zink you better to use [this](https://github.com/jgdavey/tslime.vim.git).
 
 Code may be  ugly but simple. The following is mostly a reminder for myself.
 
-I just wanted a simple way to create new pane and send text into it.  This
-version does just that. It create a pane and allow you to send a line, a
-paragraph, selected lines or a while file to new pane.  There is no check if we
-are inside tmux session, no control over pane's death, no way to connect to
-existing pane. 
+If there is just one pane then create and connect to it otherwise your vim
+would be connected to the last used pane.  You might send a line, paragraph,
+selection or whole file to a another pane.
 
 Bindings: `<leader>t` + mnemonic letters. 
  + `let g:tslime_create_pane = '<leader>tc'`  -- create a pane.
